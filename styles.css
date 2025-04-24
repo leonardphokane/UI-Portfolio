@@ -1,16 +1,22 @@
+/* Basic styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #fafafa;
+    color: #333;
 }
 
+/* Header section */
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
+    background: #5A9BF6;
+    color: white;
+    padding: 20px 10px;
     text-align: center;
+}
+
+.hero {
+    padding: 50px 0;
 }
 
 nav ul {
@@ -20,30 +26,62 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
-section {
-    padding: 2rem;
-    margin: 2rem;
-    background: #fff;
-    border-radius: 8px;
+/* Project section */
+.project-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
 }
 
 .project {
-    border: 1px solid #ddd;
-    padding: 1rem;
-    margin: 1rem 0;
+    background: #ffffff;
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
 }
 
-form input, form textarea, form button {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
+.project h3 {
+    color: #5A9BF6;
+}
+
+/* Buttons */
+button {
+    background-color: #5A9BF6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2E78C9;
+}
+
+/* Footer section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .project-grid {
+        flex-direction: column;
+    }
 }
