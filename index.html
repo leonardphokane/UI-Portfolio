@@ -3,52 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>My Dynamic Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
+        <div class="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Showcasing creative designs in web, branding, and advertising</p>
+        </div>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
+                <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a passionate UI designer with a knack for creating user-friendly and aesthetically pleasing designs.</p>
-    </section>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm a versatile designer specializing in web design, branding, and advertising. I bring creativity and a user-focused approach to every project.</p>
+        </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project Name</h3>
-            <p>A brief description of your project.</p>
-            <a href="#" target="_blank">View Project</a>
-        </div>
-    </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <h3>Web Design Project</h3>
+                    <p>Modern, responsive website for a tech startup.</p>
+                    <button>View Details</button>
+                </div>
+                <div class="project">
+                    <h3>Branding Project</h3>
+                    <p>Complete brand identity for a retail brand.</p>
+                    <button>View Details</button>
+                </div>
+                <div class="project">
+                    <h3>Advertising Campaign</h3>
+                    <p>Creative ad campaign for a global beverage company.</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <section id="contact">
+    <footer id="contact">
         <h2>Contact Me</h2>
+        <p>Email: designer@example.com | Phone: +123456789</p>
         <form action="#">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Send</button>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
         </form>
-    </section>
-
-    <footer>
         <p>&copy; 2025 My Portfolio</p>
     </footer>
 </body>
